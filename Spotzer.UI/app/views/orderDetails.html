@@ -1,0 +1,21 @@
+﻿<div class="form-group">
+    <label>Order Details</label>
+</div>
+<div class="form-group">
+    <label>Partner</label>
+    <select class="form-control" ng-options="item.id as item.name for item in partners track by item.id" ng-model="input.PartnerId" required></select>
+</div>
+<div class="form-group">
+    <label>TypeOfOrder</label>
+    <select ng-options="item as item for item in typesOfOrder track by item" class="form-control" ng-model="input.TypeOfOrder" required></select>
+</div>
+
+<div class="form-group">
+    <label>Company Name</label>
+    <select ng-options="item as item.name for item in companies" class="form-control" ng-model="company" required></select>
+</div>
+
+<div class="form-group">
+    <label>Submitted by</label>
+    <input class="form-control" type="text" required maxlength="25" ng-model="input.SubmittedBy" />
+</div>
